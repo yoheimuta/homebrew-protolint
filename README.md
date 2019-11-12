@@ -1,5 +1,7 @@
 # homebrew-protolint
 
+[![Build Status](https://dev.azure.com/yoheimuta/protolint/_apis/build/status/yoheimuta.homebrew-protolint?branchName=master)](https://dev.azure.com/yoheimuta/protolint/_build/latest?definitionId=1&branchName=master)
+
 ## How do I install these formulae?
 `brew install yoheimuta/protolint/protolint`
 
