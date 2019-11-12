@@ -1,15 +1,15 @@
 class Protolint < Formula
   desc "A pluggable tool to enforce Protocol Buffer style and conventions. "
   homepage "https://github.com/yoheimuta/protolint"
-  version "v0.19.1"
+  version "v0.20.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/yoheimuta/protolint/releases/download/v0.19.1/protolint_0.19.1_Darwin_x86_64.tar.gz"
-    sha256 "f1c8d213421201298116dae80e47b116c59124eeecc9df84e4b23be10badbb77"
+    url "https://github.com/yoheimuta/protolint/releases/download/v0.20.0/protolint_0.20.0_Darwin_x86_64.tar.gz"
+    sha256 "4839c4c041393d0323b62e673cd43d5176b57a9b46098570869f3874bbf488fe"
   elsif OS.linux?
-    url "https://github.com/yoheimuta/protolint/releases/download/v0.19.1/protolint_0.19.1_Linux_x86_64.tar.gz"
-    sha256 "fa03bd3b1711d4c9e755c5b0c1ddcca969ac65ba7eb4b6fa3ad49676b379aedb"
+    url "https://github.com/yoheimuta/protolint/releases/download/v0.20.0/protolint_0.20.0_Linux_x86_64.tar.gz"
+    sha256 "abc293f2d1f106a26f63d054190c82516ec293035c6630cdc9493a5338da1042"
   end
 
   def install
@@ -18,6 +18,6 @@ class Protolint < Formula
   end
 
   test do
-    system "#{bin}/protolint list"
+    system "#{bin}/protolint version"
   end
 end
