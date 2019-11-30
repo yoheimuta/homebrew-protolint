@@ -2,16 +2,16 @@
 class Protolint < Formula
   desc "A pluggable tool to enforce Protocol Buffer style and conventions."
   homepage "https://github.com/yoheimuta/protolint"
-  version "0.22.2"
+  version "0.22.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/yoheimuta/protolint/releases/download/v0.22.2/protolint_0.22.2_Darwin_x86_64.tar.gz"
-    sha256 "af921a943b6c64f4964efcea0b67fc95215532731b3428c85a93bf79ed7eb71b"
+    url "https://github.com/yoheimuta/protolint/releases/download/v0.22.3/protolint_0.22.3_Darwin_x86_64.tar.gz"
+    sha256 "09ac6ac98892e6aebcdbef37a92f63b2ec22cecbc764f56e4b537eb0a99951df"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.22.2/protolint_0.22.2_Linux_x86_64.tar.gz"
-      sha256 "8e3460c48d4473cd232c52a78d0ed023911eb0df2aa7ccc0462ba73e815f345a"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.22.3/protolint_0.22.3_Linux_x86_64.tar.gz"
+      sha256 "73200960d51a2dacd893b1810e846214933b08e0a263ccac16ae37a10f475349"
     end
   end
 
