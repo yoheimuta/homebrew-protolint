@@ -37,7 +37,7 @@ class Protolint < Formula
   end
 
   test do
-    system "#{bin}/protolint version"
-    system "#{bin}/protoc-gen-protolint version"
+    system "#{bin}/protolint", "version"
+    system "#{bin}/protoc-gen-protolint", "version"
   end
 end
