@@ -5,28 +5,28 @@
 class Protolint < Formula
   desc "Pluggable tool to enforce Protocol Buffer style and conventions"
   homepage "https://github.com/yoheimuta/protolint"
-  version "0.34.1"
+  version "0.35.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.34.1/protolint_0.34.1_Darwin_x86_64.tar.gz"
-      sha256 "6564b1169ca103a78963e4716847eb17a75412a8ac63f59b5d3660014f4c73ed"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.35.0/protolint_0.35.0_Darwin_x86_64.tar.gz"
+      sha256 "d8dc2e70845ef6d3241ea518735a131508497b7e1b6f3c6139dbdda44b4e351e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.34.1/protolint_0.34.1_Darwin_arm64.tar.gz"
-      sha256 "efa4b0bd9435fa9175c27e3a692b7a4d1a0404045b590d130d4f324aebaf36b3"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.35.0/protolint_0.35.0_Darwin_arm64.tar.gz"
+      sha256 "300ee7e32176f5421e331af2d28e9a3741ea917f685641d0a8729145ae77f91d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.34.1/protolint_0.34.1_Linux_x86_64.tar.gz"
-      sha256 "c223f785d86e54682d8f97eacb62e7722a9a2787cbfc5896107c945e16c042ae"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.35.0/protolint_0.35.0_Linux_x86_64.tar.gz"
+      sha256 "edcc6fb4148027af05148e9ce6023aee50325f5fa9da7f59609286468161d2ac"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.34.1/protolint_0.34.1_Linux_arm64.tar.gz"
-      sha256 "b08ebe3927041e5e290852730452b054e47bf698d60bb98dfc1660a458b44e1c"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.35.0/protolint_0.35.0_Linux_arm64.tar.gz"
+      sha256 "58562582d4e400646b0f05b318e59daabc267535599a29cf6ff91c0549bd5b87"
     end
   end
 
