@@ -5,12 +5,12 @@
 class Protolint < Formula
   desc "Pluggable tool to enforce Protocol Buffer style and conventions"
   homepage "https://github.com/yoheimuta/protolint"
-  version "0.55.1"
+  version "0.55.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.1/protolint_0.55.1_darwin_amd64.tar.gz"
-      sha256 "fa0d5de95cd4029d086925d221d6941fcdc65ca5b688943e013f07fb8548b7f8"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.2/protolint_0.55.2_darwin_amd64.tar.gz"
+      sha256 "a099bac7a38ebed66a5f3674cdef6468ac8f231adeacee7f258757a6f6973159"
 
       def install
         bin.install "protolint"
@@ -19,8 +19,8 @@ class Protolint < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.1/protolint_0.55.1_darwin_arm64.tar.gz"
-      sha256 "644b10c84709050f608559ebe65b1a746d31378627aefcf609dfdb777ff6e501"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.2/protolint_0.55.2_darwin_arm64.tar.gz"
+      sha256 "ce6204b275546f65f5b0bb8143d162176d1d8aa2506972e872f33a83cc1632e7"
 
       def install
         bin.install "protolint"
@@ -32,8 +32,8 @@ class Protolint < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.1/protolint_0.55.1_linux_amd64.tar.gz"
-      sha256 "2deada2a211351f7a37bf3c51ae1702b58b502ee8236440bf55a96c31d7f6519"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.2/protolint_0.55.2_linux_amd64.tar.gz"
+      sha256 "2b4747aa3568bd70bb84c7ce76d1e6f3968fa3024012b68977e9defd28cb7760"
       def install
         bin.install "protolint"
         bin.install "protoc-gen-protolint"
@@ -41,8 +41,8 @@ class Protolint < Formula
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.1/protolint_0.55.1_linux_armv6.tar.gz"
-      sha256 "efe78290b1e2d93f74083c7887f1391edc89de5e328fb870a86eb1d8f372d41a"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.2/protolint_0.55.2_linux_armv6.tar.gz"
+      sha256 "0eba50b868868e9bfd3991e50929e4d240490f636a443d7bcf54436954c6a285"
       def install
         bin.install "protolint"
         bin.install "protoc-gen-protolint"
@@ -50,8 +50,8 @@ class Protolint < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.1/protolint_0.55.1_linux_arm64.tar.gz"
-      sha256 "5f142778c3bab7843a077b0fb27b7e46f63c4488edeaf283f34f0407e2eebc1f"
+      url "https://github.com/yoheimuta/protolint/releases/download/v0.55.2/protolint_0.55.2_linux_arm64.tar.gz"
+      sha256 "b66df92c1b3f1b04b327af01677c12692c99cd4be1e3483f87924d952b13e9c4"
       def install
         bin.install "protolint"
         bin.install "protoc-gen-protolint"
